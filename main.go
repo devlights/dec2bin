@@ -32,7 +32,7 @@ func run() int {
 	return 0
 }
 
-// Convert -- 指定された10進数文字列を16進数に変換します.
+// Convert -- 指定された10進数文字列を2進数に変換します.
 func Convert(v string) (string, error) {
 	if len(v) == 0 {
 		return "", nil

@@ -4,7 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"strconv"
+
+	"github.com/devlights/gomy/convert"
 )
 
 func main() {
@@ -34,14 +35,5 @@ func run() int {
 
 // Convert -- 指定された10進数文字列を2進数に変換します.
 func Convert(v string) (string, error) {
-	if len(v) == 0 {
-		return "", nil
-	}
-
-	i, err := strconv.ParseInt(v, 10, 32)
-	if err != nil {
-		return "", err
-	}
-
-	return fmt.Sprintf("0b%b", i), nil
+	return convert.Dec2Bin(v, "0b", 0)
 }

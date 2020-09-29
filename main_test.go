@@ -23,32 +23,32 @@ func TestConvert(t *testing.T) {
 		{
 			name: "convert 255",
 			in:   testin{val: "255"},
-			out:  testout{result: "0b11111111"},
+			out:  testout{result: "11111111"},
 		},
 		{
 			name: "convert 8",
 			in:   testin{val: "8"},
-			out:  testout{result: "0b1000"},
+			out:  testout{result: "1000"},
 		},
 		{
 			name: "convert 4",
 			in:   testin{val: "4"},
-			out:  testout{result: "0b100"},
+			out:  testout{result: "100"},
 		},
 		{
 			name: "convert 2",
 			in:   testin{val: "2"},
-			out:  testout{result: "0b10"},
+			out:  testout{result: "10"},
 		},
 		{
 			name: "convert 1",
 			in:   testin{val: "1"},
-			out:  testout{result: "0b1"},
+			out:  testout{result: "1"},
 		},
 		{
 			name: "convert 15",
 			in:   testin{val: "15"},
-			out:  testout{result: "0b1111"},
+			out:  testout{result: "1111"},
 		},
 	}
 

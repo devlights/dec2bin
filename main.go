@@ -35,5 +35,5 @@ func run() int {
 
 // Convert -- 指定された10進数文字列を2進数に変換します.
 func Convert(v string) (string, error) {
-	return convert.Dec2Bin(v, "0b", 0)
+	return convert.Dec2Bin(v, "", 0)
 }
